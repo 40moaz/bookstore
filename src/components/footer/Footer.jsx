@@ -45,7 +45,7 @@ const Footer = () => {
           <div className="icon"> <i className="fa-brands fa-pinterest"></i>  </div>
         </div>
         <div className="copy_write">
-          Creayed by <span> sherif altiby</span> | allrights reseved!
+          Creayed by <span> Moaz Ali</span> | allrights reseved!
         </div>
     </footer>
 

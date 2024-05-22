@@ -1,8 +1,12 @@
 import "./BookApi.scss";
+
+import * as actions from "../context/ActionTypes";
+
 import { useEffect, useState } from "react";
+
 import axios from "axios";
 import { useItemContext } from "../context/GlobalContext";
-import * as actions from "../context/ActionTypes";
+
 const BookApi = () => {
   const context = useItemContext();
   const [bookData, setBookData] = useState(null);
@@ -36,7 +40,7 @@ const BookApi = () => {
           console.log(context.bookName);
         });
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+
   }, [context.bookName]);
 
   return (
